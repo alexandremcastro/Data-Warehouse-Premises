@@ -7,7 +7,7 @@
     + [Links](#Introducao)
     + [Licença](#Introducao)
 + [Modelagem](#Introducao)
-    + [Instalando o Oracle Data Modeler](#Introducao)
+    + [Download do Oracle Data Modeler](#Introducao)
     + [Modelo negocial](#Introducao)
     + [Modelo lógico](#Introducao)
     + [Modelo dimensional](#Introducao)
