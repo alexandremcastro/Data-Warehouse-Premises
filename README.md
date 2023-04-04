@@ -107,7 +107,7 @@
 ### Preparando o Oracle VirtualBox
 
 <a name = "DownloadVirtualBox"></a>
-- Download
+<b>Download</b>
 
 Acesse a página de download do Oracle VirtualBox
 
@@ -124,7 +124,7 @@ Automaticamente o download começará
 ![Untitled](Imagens/Untitled%202.png)
 
 <a name = "InstalacaoVirtualBox"></a>
-<b> Instalação </b>
+<b>Instalação</b>
 
 <aside>
 💡 Instale o pacote Microsoft Visual C++ 2019 Redistributable Package (x64)
@@ -2147,7 +2147,7 @@ FROM ST_DIM_LOCALIDADE;
 ![Untitled](Imagens/Untitled%20179.png)
 
 <a name = "T-D-Produto"></a>
-- Criando a dimensão produto
+<b>Criando a dimensão produto</b>
 
 ```sql
 CREATE TABLE ST_DIM_PRODUTO
