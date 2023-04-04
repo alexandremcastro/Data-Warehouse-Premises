@@ -1,10 +1,14 @@
-# Sumário
+
+# Data Warehouse On-Premises
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/LICENSE)
+
+<a name = "Inicio"></a>
+
+## Sumário
 + [Introdução](#Introducao)
     + [Sobre](#Sobre)
-        + [Overview](#Overview)
-        + [Ferramentas](#Ferramentas)
-    + [Links](#Links)
-    + [Licença](#Licensa)
+        + [Ferramentas utilizadas](#Ferramentas)
+        + [Links](#Links)
 + [Infraestrutura](#Infraestrutura)
     + [Preparando o Oracle VirtualBox](#PreparandoVirtualBox)
         + [Download](#DownloadVirtualBox)
@@ -65,22 +69,33 @@
         + [Dimensão localidade](#CargaLocalidade)
         + [Fato venda](#FatoVendaa)
     + [Verificando a integridade de dados](#Integridade)
-
+<br>
 
 <a name = "Introducao"></a>
 ## Introdução
+[Voltar para o ínicio ↑](#Inicio)
+
+### Requisitos
+
 <br>
 
 <a name = "Sobre"></a>
 ### Sobre
-<br>
 
-<a name = "Overview"></a>
-### Overview
-<br>
+Um projeto de data warehouse com Oracle Database é um esforço para criar um ambiente de armazenamento de dados centralizado e integrado que possa suportar as necessidades de análise de negócios de uma organização. O objetivo final é fornecer aos usuários de negócios um acesso fácil e rápido a informações precisas e relevantes para que possam tomar decisões mais informadas e eficazes.
+
+O projeto começa com a identificação dos requisitos de negócios e dos dados que precisam ser armazenados e analisados. Em seguida, é criado um modelo de dados que define as tabelas, colunas e relacionamentos necessários para armazenar e integrar os dados. O modelo de dados é projetado para ser escalável e permitir a adição de novos dados e análises conforme as necessidades do negócio evoluem.
+
+Uma vez que o modelo de dados é definido, o próximo passo é a construção do data warehouse em si. O Oracle Database é uma das opções de banco de dados mais populares para data warehousing, devido à sua capacidade de processamento de grandes volumes de dados e à sua capacidade de escalabilidade. A arquitetura do data warehouse pode ser baseada em um modelo de camadas, onde os dados são carregados em uma camada de aterramento (staging layer) antes de serem transformados e carregados em camadas subsequentes. A camada final é a camada de apresentação, onde os usuários de negócios acessam os dados por meio de ferramentas de visualização ou de relatórios.
+
+Um aspecto crítico de qualquer projeto de data warehouse é o processo de ETL (Extração, Transformação e Carregamento), que envolve a extração dos dados de várias fontes, a transformação para garantir a integridade e qualidade dos dados, e o carregamento nos repositórios de dados do data warehouse. O Oracle Database oferece ferramentas de ETL, como o Oracle Data Integrator (ODI) e o Oracle Warehouse Builder (OWB), para ajudar na implementação deste processo.
+
+Por fim, o data warehouse é mantido por meio de atividades regulares de administração e manutenção, como monitoramento de desempenho, backup e recuperação de dados e gerenciamento de usuários e segurança.
+
+Em resumo, um projeto de data warehouse com Oracle Database é uma iniciativa complexa que requer a definição cuidadosa de requisitos de negócios, a criação de um modelo de dados escalável, a construção de um data warehouse robusto e o gerenciamento contínuo do ambiente de armazenamento de dados.
 
 <a name = "Ferramentas"></a>
-### Ferramentas
+<b>Ferramentas utilizadas</b>
 
 1. [Oracle VM VirtualBox](https://www.virtualbox.org/): Fornece a virtualização de máquinas para simulação de um ambiente on-premises.
 2. [Oracle Linux](https://www.oracle.com/br/linux/): Sistema operacional fornecido pela Oracle e otimizado para as suas aplicações.
@@ -89,22 +104,24 @@
 5. [Oracle SQL Developer](https://www.oracle.com/database/sqldeveloper/): Fornece um ambiente para acessar o banco de dados e realizar consultas em SQL.
 6. [Pentaho Data Integration](https://help.hitachivantara.com/Documentation/Pentaho/8.3/Products/Pentaho_Data_Integration): Ferramenta para realizar a integração de dados
 
-<br>
-
 <a name = "Links"></a>
-### Links
-<br>
+<b>Links</b>
 
-<a name = "Licenca"></a>
-### Licença
+Link para o projeto no 
+[Notion](https://alexandremcastro.notion.site/02-2023-AWS-Data-Lake-Serverless-c8f8198221134364991976c26ee1a985)  <a name = "Notion"></a>
+
+Link para o projeto no  <a name = "Site"></a>
+[Site](https://alexandre-castro.vercel.app/blog/datalake-serverless)
+
 <br>
 
 <a name = "Infraestrutura"></a>
 ## Infraestrutura
-<br>
+[Voltar para o ínicio ↑](#Inicio)
 
 <a name = "PreparandoVirtualBox"></a>
 ### Preparando o Oracle VirtualBox
+<br>
 
 <a name = "DownloadVirtualBox"></a>
 <b>Download</b>
@@ -122,6 +139,8 @@ Clique na plataforma que você está utilizando, no meu caso `Windows hosts`
 Automaticamente o download começará
 
 ![Untitled](Imagens/Untitled%202.png)
+
+<br>
 
 <a name = "InstalacaoVirtualBox"></a>
 <b>Instalação</b>
@@ -162,6 +181,8 @@ Clique em `Finish`
 Automaticamente será aberto o VirtualBox
 
 ![Untitled](Imagens/Untitled%209.png)
+
+<br>
 
 <a name = "VirtualizacaoVirtualBox"></a>
 <b>Virtualização</b>
@@ -218,6 +239,8 @@ A máquina está pronta para receber o Linux
 
 <a name = "PreparandoLinux"></a>
 ### Preparando o Oracle Linux
+
+<br>
 
 <a name = "DownloadLinux"></a>
 <b>Download</b>
@@ -387,6 +410,8 @@ Instalação concluída
 
 ![Untitled](Imagens/Untitled%2042.png)
 
+<br>
+
 <a name = "ConfiguracaoLinux"></a>
 <b>Configurações</b>
 
@@ -494,8 +519,12 @@ systemctl disable firewalld
 
 ![Untitled](Imagens/Untitled%2050.png)
 
+<br>
+
 <a name = "PreparandoDatabase"></a>
 ### Preparando o Oracle Database
+
+<br>
 
 <a name = "DownloadDatabase"></a>
 <b>Download</b>
@@ -538,8 +567,12 @@ ls
 
 ![Untitled](Imagens/Untitled%2055.png)
 
+<br>
+
 <a name = "InstalacaoDatabase"></a>
 <b>Instalação</b>
+
+<br>
 
 <a name = "Preinstall"></a>
 <b>Pre-install</b>
@@ -740,6 +773,8 @@ CV_ASSUME_DISTID=OEL8
 
 Grave e feche o arquivo
 
+<br>
+
 <a name = "InstalacaoOracleDatabase"></a>
 <b>Instalação</b>
 
@@ -824,6 +859,8 @@ Clique em `Close`
 
 ![Untitled](Imagens/Untitled%2074.png)
 
+<br>
+
 <a name = "Listener"></a>
 <b>Criando o Listener</b>
 
@@ -882,6 +919,8 @@ lsnrctl status
 
 ![Untitled](Imagens/Untitled%2083.png)
 
+<br>
+
 <a name = "CriandoBanco"></a>
 <b>Criando o Banco</b>
 
@@ -926,6 +965,8 @@ dbca
 
 ![Untitled](Imagens/Untitled%2098.png)
 
+<br>
+
 <a name = "Acesso"></a>
 <b>Acesso</b>
 
@@ -941,6 +982,7 @@ sqlplus / as sysdba
 ```
 
 ![Untitled](Imagens/Untitled%2099.png)
+
 <br>
 
 <a name = "DownloadModeler"></a>
@@ -996,6 +1038,7 @@ Abra o aplicativo `datamodeler`
 Essa é a interface usada para criar os modelos
 
 ![Untitled](Imagens/Untitled%20106.png)
+
 <br>
 
 <a name = "DownloadDeveloper"></a>
@@ -1085,6 +1128,7 @@ Se tudo der certo, você será redirecionado para a tela de construção de quer
 ![Untitled](Imagens/Untitled%20116.png)
 
 Com isso, toda infraestrutura está preparada para receber as modelagens.
+
 <br>
 
 <a name = "DownloadPDI"></a>
@@ -1165,6 +1209,8 @@ Instalação finalizada!
 
 <a name = "Modelagem"></a>
 ## Modelagem
+[Voltar para o ínicio ↑](#Inicio)
+
 <br>
 
 <a name = "ModeloNegocial"></a>
@@ -1185,6 +1231,8 @@ Antes de seguir, leia com atenção todos os tópicos tratados no documento a se
 💡 Para esta etapa, é necessário a ferramenta Oracle Data Modeler
 
 </aside>
+
+<br>
 
 <a name = "UsarFerramenta"></a>
 <b> Como usar a ferramenta (básico)</b>
@@ -1225,10 +1273,13 @@ Clique na primeira entidade e depois na segunda entidade, criando assim o relaci
 
 ![Untitled](Imagens/Untitled%20135.png)
 
+<br>
+
 <a name = "ModeloL"></a>
-<b>Modelo lógico/b>
+<b>Modelo lógico</b>
 
 ![Logical.png](Imagens/Logical.png)
+
 <br>
 
 <a name = "ModeloRelacional"></a>
@@ -1238,6 +1289,8 @@ Clique na primeira entidade e depois na segunda entidade, criando assim o relaci
 💡 Para esta etapa, é necessário a ferramenta Oracle Data Modeler
 
 </aside>
+
+<br>
 
 <a name = "ConversaoL-R"></a>
 <b>Convertendo o modelo lógico para relacional</b>
@@ -1254,10 +1307,13 @@ Será gerado o modelo relacional, faça ajustes se necessário
 
 ![Untitled](Imagens/Untitled%20137.png)
 
+<br>
+
 <a name = "ModeloR"></a>
 <b>Modelo relacional</b>
 
 ![Relational_1.png](Imagens/Relational_1.png)
+
 <br>
 
 <a name = "ModeloDimensional"></a>
@@ -1274,6 +1330,7 @@ Será gerado o modelo relacional, faça ajustes se necessário
 Baseado no modelo relacional, montei o modelo dimensional
 
 ![Dimensional.png](Imagens/Dimensional.png)
+
 <br>
 
 <a name = "ModeloFisico"></a>
@@ -1283,6 +1340,8 @@ Baseado no modelo relacional, montei o modelo dimensional
 💡 Para esta etapa, é necessário a ferramenta Oracle Data Modeler
 
 </aside>
+
+<br>
 
 <a name = "ConversaoD-F"></a>
 <b>Convertendo o modelo dimensional para físico</b>
@@ -1308,6 +1367,8 @@ Com o modelo físico criado, clique em `Salvar`
 Aparecerá essa janela depois de salvar
 
 ![Untitled](Imagens/Untitled%20142.png)
+
+<br>
 
 <a name = "ModeloF"></a>
 ### Modelo físico
@@ -1394,6 +1455,8 @@ Agora, com o modelo físico em “mãos”, é possível começar a implementaç
 
 <a name = "LegadoStaging"></a>
 ## Sistema Legado/Staging Area
+[Voltar para o ínicio ↑](#Inicio)
+
 <br>
 
 <a name = "Legado"></a>
@@ -1510,11 +1573,11 @@ ENABLE
 ALTER TABLE TB_ENDERECO
 ADD CONSTRAINT TB_ENDERECO_FK1 FOREIGN KEY
 (
-ID_CLIENTE 
+    ID_CLIENTE 
 )
 REFERENCES TB_CADASTRO_CLIENTE
 (
-ID_CLIENTE 
+    ID_CLIENTE 
 )
 ENABLE;
 
@@ -1546,11 +1609,11 @@ ENABLE
 ALTER TABLE TB_PRODUTO
 ADD CONSTRAINT TB_PRODUTO_FK1 FOREIGN KEY
 (
-ID_CATEGORIA 
+    ID_CATEGORIA 
 )
 REFERENCES TB_CATEGORIA
 (
-ID_CATEGORIA 
+    ID_CATEGORIA 
 )
 ENABLE;
 
@@ -1643,7 +1706,7 @@ INSERT INTO "SOURCE"."TB_CADASTRO_CLIENTE" (ID_CLIENTE, NOME_CLIENTE, EMAIL_CLIE
 INSERT INTO "SOURCE"."TB_CADASTRO_CLIENTE" (ID_CLIENTE, NOME_CLIENTE, EMAIL_CLIENTE) VALUES ('1928', 'Julio', 'xxxgmail.com');
 INSERT INTO "SOURCE"."TB_CADASTRO_CLIENTE" (ID_CLIENTE, NOME_CLIENTE, EMAIL_CLIENTE) VALUES ('1028', 'Messias', 'messias@gmail.com');
 INSERT INTO "SOURCE"."TB_CADASTRO_CLIENTE" (ID_CLIENTE, NOME_CLIENTE, EMAIL_CLIENTE) VALUES ('1348', 'Matusalem', '12345');
-commit;
+COMMIT;
 
 TRUNCATE TABLE TB_ENDERECO;
 INSERT INTO "SOURCE"."TB_ENDERECO" (ID_ENDERECO, LOGRADOURO, NUMERO, CIDADE, ESTADO, PAIS, CEP, ID_CLIENTE) VALUES ('999887766', 'Rua Nano', '245', 'Rio de Janeiro', 'RJ', 'Brasil', '22998-761', '1098');
@@ -1715,6 +1778,7 @@ order by nome_localidade, nome_produto
 ![Untitled](Imagens/Untitled%20146.png)
 
 Com isso o sistema legado está pronto, com isso, já é possível criar a staging area
+
 <br>
 
 <a name = "Staging"></a>
@@ -1993,6 +2057,8 @@ FROM user_tables;
 
 A parte mais importante e demorada da implementação é nessa etapa, estarei realizando transformações para se adequar ao modelo dimensional criado na etapa de modelagem dimensional
 
+<br>
+
 <a name = "T-D-Cliente"></a>
 <b>Criando a dimensão cliente</b>
 
@@ -2094,15 +2160,19 @@ Criando a tabela da dimensão cliente
 ```sql
 CREATE TABLE ST_DIM_CLIENTE
 (
-NK_ID_CLIENTE VARCHAR2(20),
-NM_CLIENTE VARCHAR2(50),
-NM_CIDADE_CLIENTE VARCHAR2(50),
-FLAG_ACEITA_CAMPANHA CHAR(1),
-DESC_CEP VARCHAR2(10)
+    NK_ID_CLIENTE VARCHAR2(20),
+    NM_CLIENTE VARCHAR2(50),
+    NM_CIDADE_CLIENTE VARCHAR2(50),
+    FLAG_ACEITA_CAMPANHA CHAR(1),
+    DESC_CEP VARCHAR2(10)
 );
 
 INSERT INTO ST_DIM_CLIENTE
-SELECT A.ID_CLIENTE, A.NOME_CLIENTE, B.CIDADE, 0, B.CEP
+SELECT 
+    A.ID_CLIENTE,
+    A.NOME_CLIENTE,
+    B.CIDADE, 0,
+    B.CEP
 FROM ST_CADASTRO_CLIENTE A, ST_ENDERECO B
 WHERE A.ID_CLIENTE = B.ID_CLIENTE;
 
@@ -2113,6 +2183,8 @@ FROM ST_DIM_CLIENTE;
 ```
 
 ![Untitled](Imagens/Untitled%20178.png)
+
+<br>
 
 <a name = "T-D-Localidade"></a>
 <b>Criando a dimensão localidade</b>
@@ -2127,13 +2199,15 @@ CREATE TABLE ST_DIM_LOCALIDADE
 );
 
 INSERT INTO ST_DIM_LOCALIDADE
-SELECT ID_LOCALIDADE, NOME_LOCALIDADE, CIDADE_LOCALIDADE,
-CASE
-WHEN CIDADE_LOCALIDADE = 'Barueri' THEN 'Sudeste'
-WHEN CIDADE_LOCALIDADE = 'São Paulo' THEN 'Sudeste'
-WHEN CIDADE_LOCALIDADE = 'Rio de Janeiro' THEN 'Sudeste'
-WHEN CIDADE_LOCALIDADE = 'Salvador' THEN 'Nordeste '
-WHEN CIDADE_LOCALIDADE = 'Tatuapé' THEN 'Sudeste'
+SELECT
+     ID_LOCALIDADE,
+     NOME_LOCALIDADE,
+     CIDADE_LOCALIDADE,
+CASE WHEN CIDADE_LOCALIDADE = 'Barueri' THEN 'Sudeste'
+     WHEN CIDADE_LOCALIDADE = 'São Paulo' THEN 'Sudeste'
+     WHEN CIDADE_LOCALIDADE = 'Rio de Janeiro' THEN 'Sudeste'
+     WHEN CIDADE_LOCALIDADE = 'Salvador' THEN 'Nordeste '
+     WHEN CIDADE_LOCALIDADE = 'Tatuapé' THEN 'Sudeste'
 ELSE 'NA'
 END AS REGIAO
 FROM ST_LOCALIDADE;
@@ -2145,6 +2219,8 @@ FROM ST_DIM_LOCALIDADE;
 ```
 
 ![Untitled](Imagens/Untitled%20179.png)
+
+<br>
 
 <a name = "T-D-Produto"></a>
 <b>Criando a dimensão produto</b>
@@ -2160,17 +2236,20 @@ CREATE TABLE ST_DIM_PRODUTO
 );
 
 INSERT INTO ST_DIM_PRODUTO
-SELECT A.ID_PRODUTO, A.SKU, A.NOME_PRODUTO, B.NOME_CATEGORIA,
-CASE
-WHEN A.NOME_PRODUTO LIKE '%Sony%' THEN 'Sony'
-WHEN A.NOME_PRODUTO LIKE '%Iphone%' THEN 'Apple'
-WHEN A.NOME_PRODUTO LIKE '%MSI%' THEN 'MSI'
-WHEN A.NOME_PRODUTO LIKE '%Galaxy%' THEN 'Samsung'
-WHEN A.NOME_PRODUTO LIKE '%ASUS%' THEN 'Asus'
-WHEN A.NOME_PRODUTO LIKE '%Vaio' THEN 'Vaio'
-WHEN A.NOME_PRODUTO LIKE '%Canon%' THEN 'Canon'
-ELSE 'NA'
-END AS MARCA_PRODUTO
+SELECT 
+     A.ID_PRODUTO,
+     A.SKU,
+     A.NOME_PRODUTO,
+     B.NOME_CATEGORIA,
+CASE WHEN A.NOME_PRODUTO LIKE '%Sony%' THEN 'Sony'
+     WHEN A.NOME_PRODUTO LIKE '%Iphone%' THEN 'Apple'
+     WHEN A.NOME_PRODUTO LIKE '%MSI%' THEN 'MSI'
+     WHEN A.NOME_PRODUTO LIKE '%Galaxy%' THEN 'Samsung'
+     WHEN A.NOME_PRODUTO LIKE '%ASUS%' THEN 'Asus'
+     WHEN A.NOME_PRODUTO LIKE '%Vaio' THEN 'Vaio'
+     WHEN A.NOME_PRODUTO LIKE '%Canon%' THEN 'Canon'
+     ELSE 'NA'
+     END AS MARCA_PRODUTO
 FROM ST_PRODUTO A, ST_CATEGORIA B
 WHERE A.ID_CATEGORIA = B.ID_CATEGORIA;
 
@@ -2181,6 +2260,8 @@ FROM ST_DIM_PRODUTO;
 ```
 
 ![Untitled](Imagens/Untitled%20180.png)
+
+<br>
 
 <a name = "T-Fato"></a>
 <b>Criando o fato venda</b>
@@ -2199,11 +2280,12 @@ CREATE TABLE ST_VENDA
 );
 
 INSERT INTO ST_VENDA
-SELECT A.ID_TRANSACAO, A.DATA_ENTREGA, 
-CASE
-WHEN A.STATUS_PAGAMENTO = 'NA' THEN 'Erro'
-ELSE A.STATUS_PAGAMENTO
-END as STATUS_PAGAMENTO, A.ID_CLIENTE, A.ID_LOCALIDADE, B.ID_PRODUTO, B.QUANTIDADE, B.PRECO_UNITARIO
+    SELECT 
+    A.ID_TRANSACAO, A.DATA_ENTREGA, 
+    CASE
+    WHEN A.STATUS_PAGAMENTO = 'NA' THEN 'Erro'
+    ELSE A.STATUS_PAGAMENTO
+    END as STATUS_PAGAMENTO, A.ID_CLIENTE, A.ID_LOCALIDADE, B.ID_PRODUTO, B.QUANTIDADE, B.PRECO_UNITARIO
 FROM ST_PEDIDOS A, ST_ITENS_PEDIDO B
 WHERE A.ID_TRANSACAO = B.ID_TRANSACAO;
 COMMIT;
@@ -2212,11 +2294,12 @@ SELECT * FROM ST_VENDA;
 ```
 
 ![Untitled](Imagens/Untitled%20181.png)
+
 <br>
 
 <a name = "Implementacao"></a>
 ## Implementação
-<br>
+[Voltar para o ínicio ↑](#Inicio)
 
 <a name = "DataWarehouse"></a>
 ### Criando o Data Warehouse
@@ -2281,6 +2364,9 @@ CREATE TABLE TB_DIM_CLIENTE
     CONSTRAINT TB_DIM_CLIENTE_PK PRIMARY KEY (SK_CLIENTE) ENABLE
 );
 ```
+
+<br>
+
 <a name = "DW-Produto"></a>
 <b>Dimensão produto</b>
 
@@ -2295,15 +2381,17 @@ Criando a dimensão cliente com a surrogate key, mencionando a sequência
 ```sql
 CREATE TABLE TB_DIM_PRODUTO
 (
-SK_PRODUTO INTEGER DEFAULT DIM_PRODUTO_ID_SEQ.NEXTVAL,
-NK_ID_PRODUTO VARCHAR(20) NOT NULL,
-DESC_SKU VARCHAR2(50) NOT NULL,
-NM_PRODUTO VARCHAR2(50) NOT NULL,
-NM_CATEGORIA_PRODUTO VARCHAR2(30) NOT NULL,
-NM_MARCA_PRODUTO VARCHAR2(30) NOT NULL,
-CONSTRAINT TB_DIM_PRODUTO_PK PRIMARY KEY (SK_PRODUTO) ENABLE
+    SK_PRODUTO INTEGER DEFAULT DIM_PRODUTO_ID_SEQ.NEXTVAL,
+    NK_ID_PRODUTO VARCHAR(20) NOT NULL,
+    DESC_SKU VARCHAR2(50) NOT NULL,
+    NM_PRODUTO VARCHAR2(50) NOT NULL,
+    NM_CATEGORIA_PRODUTO VARCHAR2(30) NOT NULL,
+    NM_MARCA_PRODUTO VARCHAR2(30) NOT NULL,
+    CONSTRAINT TB_DIM_PRODUTO_PK PRIMARY KEY (SK_PRODUTO) ENABLE
 );
 ```
+
+<br>
 
 <a name = "DW-Localidade"></a>
 <b>Dimensão localidade</b>
@@ -2328,6 +2416,8 @@ CREATE TABLE TB_DIM_LOCALIDADE
 );
 ```
 
+<br>
+
 <a name = "DW-Tempo"></a>
 <b>Dimensão tempo</b>
 
@@ -2346,6 +2436,8 @@ CREATE TABLE TB_DIM_TEMPO
 );
 ```
 
+<br>
+
 <a name = "DW-Fato"></a>
 <b>Fato venda</b>
 
@@ -2363,10 +2455,13 @@ QNT_VENDA INTEGER,
 CONSTRAINT TB_FATO_VENDA_PK PRIMARY KEY (SK_CLIENTE, SK_PRODUTO, SK_LOCALIDADE, SK_DATA)                    ENABLE
 );
 ```
+
 <br>
 
 <a name = "CargaDados"></a>
 ### Carga de dados
+
+<br>
 
 <a name = "CargaTempo"></a>
 <b>Dimensão tempo</b>
@@ -2406,6 +2501,9 @@ FROM
 );
 COMMIT;
 ```
+
+<br>
+
 <a name = "CargaCliente"></a>
 <b>Dimensão cliente</b>
 
@@ -2423,6 +2521,9 @@ FROM
 
 COMMIT;
 ```
+
+<br>
+
 <a name = "CargaProduto"></a>
 <b>Dimensão produto</b>
 
@@ -2440,6 +2541,9 @@ FROM
 
 COMMIT;
 ```
+
+<br>
+
 <a name = "CargaLocalidade"></a>
 <b>Dimensão localidade</b>
 
@@ -2456,6 +2560,9 @@ FROM
 
 COMMIT;
 ```
+
+<br>
+
 <a name = "FatoVendaa"></a>
 <b>Fato venda</b>
 
@@ -2526,6 +2633,7 @@ ENABLE;
 
 COMMIT;
 ```
+
 <br>
 
 <a name = "Integridade"></a>
