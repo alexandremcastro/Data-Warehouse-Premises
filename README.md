@@ -124,7 +124,7 @@ Automaticamente o download começará
 ![Untitled](Imagens/Untitled%202.png)
 
 <a name = "InstalacaoVirtualBox"></a>
-- Instalação
+<b> Instalação </b>
 
 <aside>
 💡 Instale o pacote Microsoft Visual C++ 2019 Redistributable Package (x64)
@@ -164,7 +164,7 @@ Automaticamente será aberto o VirtualBox
 ![Untitled](Imagens/Untitled%209.png)
 
 <a name = "VirtualizacaoVirtualBox"></a>
-- Virtualização
+<b>Virtualização</b>
 
 Abra o VirtualBox
 
@@ -220,7 +220,7 @@ A máquina está pronta para receber o Linux
 ### Preparando o Oracle Linux
 
 <a name = "DownloadLinux"></a>
-- Download
+<b>Download</b>
 
 Acesse a página de download do Oracle Linux
 
@@ -239,7 +239,7 @@ O download começará atomicamente
 ![Untitled](Imagens/Untitled%2020.png)
 
 <a name = "InstalacaoLinux"></a>
-- Instalação
+<b>Instalação</b>
 
 Para a instalação, abra o VirtualBox e inicie a máquina criada
 
@@ -388,10 +388,10 @@ Instalação concluída
 ![Untitled](Imagens/Untitled%2042.png)
 
 <a name = "ConfiguracaoLinux"></a>
-- Configurações
+<b>Configurações</b>
 
 <a name = "Sudoers"></a>
-- Arquivo Sudoers
+<b>Arquivo Sudoers</b>
 
 Para ter privilégios de administrador no usuário criado, é necessário incluir esse usuário no arquivo sudoers
 
@@ -440,7 +440,7 @@ Para sair do usuário `ROOT` utilize o comando:
 exit
 ```
 <a name = "Hosts"></a>
-- Arquivo Hosts
+<b>Arquivo Hosts</b>
 
 Para configurar os hosts é necessário saber o IP da máquina virtual, use o comando:
 
@@ -465,7 +465,7 @@ Insira o IP e um nome para identificar o IP ao lado, respeite os espaçamentos c
 No meu caso ficou: `192.168.0.105    castro`
 
 <a name = "Atualizacao"></a>
-- Atualização do SO
+<b>Atualização do SO</b>
 
 Com o seu usuário, rode o comando:
 
@@ -476,7 +476,7 @@ sudo yum update -y
 ![Untitled](Imagens/Untitled%2048.png)
 
 <a name = "Firewall"></a>
-- Desativando o Firewall
+<b>Desativando o Firewall</b>
 
 Para desligar o firewall, insira o comando
 
@@ -498,7 +498,7 @@ systemctl disable firewalld
 ### Preparando o Oracle Database
 
 <a name = "DownloadDatabase"></a>
-- Download
+<b>Download</b>
 
 Acesse a página de download do Oracle Database
 
@@ -539,10 +539,10 @@ ls
 ![Untitled](Imagens/Untitled%2055.png)
 
 <a name = "InstalacaoDatabase"></a>
-- Instalação
+<b>Instalação</b>
 
 <a name = "Preinstall"></a>
-- Pre-install
+<b>Pre-install</b>
 
 Instalando o pacote preinstall, use o comando
 
@@ -741,7 +741,7 @@ CV_ASSUME_DISTID=OEL8
 Grave e feche o arquivo
 
 <a name = "InstalacaoOracleDatabase"></a>
-- Instalação
+<b>Instalação</b>
 
 <aside>
 💡 É necessário estar no usuário Oracle
@@ -825,7 +825,7 @@ Clique em `Close`
 ![Untitled](Imagens/Untitled%2074.png)
 
 <a name = "Listener"></a>
-- Criando o Listener
+<b>Criando o Listener</b>
 
 <aside>
 💡 É necessário estar no usuário Oracle
@@ -883,7 +883,7 @@ lsnrctl status
 ![Untitled](Imagens/Untitled%2083.png)
 
 <a name = "CriandoBanco"></a>
-- Criando o Banco
+<b>Criando o Banco</b>
 
 <aside>
 💡 É necessário estar no usuário Oracle
@@ -927,7 +927,7 @@ dbca
 ![Untitled](Imagens/Untitled%2098.png)
 
 <a name = "Acesso"></a>
-- Acesso
+<b>Acesso</b>
 
 <aside>
 💡 É necessário estar no usuário Oracle
@@ -1187,7 +1187,7 @@ Antes de seguir, leia com atenção todos os tópicos tratados no documento a se
 </aside>
 
 <a name = "UsarFerramenta"></a>
-- Como usar a ferramenta (básico)
+<b> Como usar a ferramenta (básico)</b>
 
 Para começar a criação do modelo lógico, abra o Oracle Data Modeler
 
@@ -1226,7 +1226,7 @@ Clique na primeira entidade e depois na segunda entidade, criando assim o relaci
 ![Untitled](Imagens/Untitled%20135.png)
 
 <a name = "ModeloL"></a>
-- Modelo lógico
+<b>Modelo lógico/b>
 
 ![Logical.png](Imagens/Logical.png)
 <br>
@@ -1240,7 +1240,7 @@ Clique na primeira entidade e depois na segunda entidade, criando assim o relaci
 </aside>
 
 <a name = "ConversaoL-R"></a>
-- Convertendo o modelo lógico para relacional
+<b>Convertendo o modelo lógico para relacional</b>
 
 Para converter, clique em `Engenharia para Modelo Relacional`
 
@@ -1255,7 +1255,7 @@ Será gerado o modelo relacional, faça ajustes se necessário
 ![Untitled](Imagens/Untitled%20137.png)
 
 <a name = "ModeloR"></a>
-- Modelo relacional
+<b>Modelo relacional</b>
 
 ![Relational_1.png](Imagens/Relational_1.png)
 <br>
@@ -1269,7 +1269,7 @@ Será gerado o modelo relacional, faça ajustes se necessário
 </aside>
 
 <a name = "ModeloD"></a>
-- Modelo dimensional
+<b>Modelo dimensional</b>
 
 Baseado no modelo relacional, montei o modelo dimensional
 
@@ -1285,7 +1285,7 @@ Baseado no modelo relacional, montei o modelo dimensional
 </aside>
 
 <a name = "ConversaoD-F"></a>
-- Convertendo o modelo dimensional para físico
+<b>Convertendo o modelo dimensional para físico</b>
 
 Para gerar o modelo físico, clique em `Gerar DDL`
 
@@ -1480,29 +1480,29 @@ Com o usuário `source`, rode o seguinte script:
 ```sql
 CREATE TABLE TB_CADASTRO_CLIENTE 
 (
-ID_CLIENTE INTEGER  NOT NULL 
-, NOME_CLIENTE VARCHAR2(100) 
-, EMAIL_CLIENTE VARCHAR2(50) 
-, CONSTRAINT TB_CADASTRO_CLIENTE_PK PRIMARY KEY 
+    ID_CLIENTE INTEGER  NOT NULL 
+    , NOME_CLIENTE VARCHAR2(100) 
+    , EMAIL_CLIENTE VARCHAR2(50) 
+    , CONSTRAINT TB_CADASTRO_CLIENTE_PK PRIMARY KEY 
 (
-ID_CLIENTE 
+    ID_CLIENTE 
 )
 ENABLE 
 );
 
 CREATE TABLE TB_ENDERECO 
 (
-ID_ENDERECO INTEGER NOT NULL 
-, LOGRADOURO VARCHAR2(50) 
-, NUMERO NUMBER 
-, CIDADE VARCHAR2(20) 
-, ESTADO VARCHAR2(20) 
-, PAIS VARCHAR2(20) 
-, CEP VARCHAR2(20) 
-, ID_CLIENTE INTEGER
-, CONSTRAINT TB_ENDERECO_PK PRIMARY KEY 
+    ID_ENDERECO INTEGER NOT NULL 
+    , LOGRADOURO VARCHAR2(50) 
+    , NUMERO NUMBER 
+    , CIDADE VARCHAR2(20) 
+    , ESTADO VARCHAR2(20) 
+    , PAIS VARCHAR2(20) 
+    , CEP VARCHAR2(20) 
+    , ID_CLIENTE INTEGER
+    , CONSTRAINT TB_ENDERECO_PK PRIMARY KEY 
 (
-ID_ENDERECO 
+    ID_ENDERECO 
 )
 ENABLE 
 );
@@ -1520,25 +1520,25 @@ ENABLE;
 
 CREATE TABLE TB_PRODUTO 
 (
-ID_PRODUTO INTEGER NOT NULL 
-, SKU VARCHAR2(30) 
-, NOME_PRODUTO VARCHAR2(100) 
-, ID_CATEGORIA INTEGER
-, CONSTRAINT TB_PRODUTO_PK PRIMARY KEY 
+    ID_PRODUTO INTEGER NOT NULL 
+    , SKU VARCHAR2(30) 
+    , NOME_PRODUTO VARCHAR2(100) 
+    , ID_CATEGORIA INTEGER
+    , CONSTRAINT TB_PRODUTO_PK PRIMARY KEY 
 (
-ID_PRODUTO 
+    ID_PRODUTO 
 )
 ENABLE 
 );
 
 CREATE TABLE TB_CATEGORIA 
 (
-ID_CATEGORIA INTEGER NOT NULL 
-, NOME_CATEGORIA VARCHAR2(20) 
-, NOME_SUB_CATEGORIA VARCHAR2(20) 
-, CONSTRAINT TB_CATEGORIA_PK PRIMARY KEY 
+    ID_CATEGORIA INTEGER NOT NULL 
+    , NOME_CATEGORIA VARCHAR2(20) 
+    , NOME_SUB_CATEGORIA VARCHAR2(20) 
+    , CONSTRAINT TB_CATEGORIA_PK PRIMARY KEY 
 (
-ID_CATEGORIA 
+    ID_CATEGORIA 
 )
 ENABLE 
 );
@@ -1556,27 +1556,27 @@ ENABLE;
 
 CREATE TABLE TB_LOCALIDADE 
 (
-ID_LOCALIDADE INTEGER NOT NULL 
-, NOME_LOCALIDADE VARCHAR2(100) 
-, CIDADE_LOCALIDADE VARCHAR2(20) 
-, CONSTRAINT TB_LOCALIDADE_PK PRIMARY KEY 
+    ID_LOCALIDADE INTEGER NOT NULL 
+    , NOME_LOCALIDADE VARCHAR2(100) 
+    , CIDADE_LOCALIDADE VARCHAR2(20) 
+    , CONSTRAINT TB_LOCALIDADE_PK PRIMARY KEY 
 (
-ID_LOCALIDADE 
+    ID_LOCALIDADE 
 )
 ENABLE 
 );
 
 CREATE TABLE TB_PEDIDOS 
 (
-ID_TRANSACAO INTEGER NOT NULL 
-, DATA_TRANSACAO TIMESTAMP 
-, DATA_ENTREGA TIMESTAMP 
-, STATUS_PAGAMENTO VARCHAR2(20) 
-, ID_CLIENTE INTEGER 
-, ID_LOCALIDADE INTEGER 
-, CONSTRAINT TB_PEDIDOS_PK PRIMARY KEY 
+    ID_TRANSACAO INTEGER NOT NULL 
+    , DATA_TRANSACAO TIMESTAMP 
+    , DATA_ENTREGA TIMESTAMP 
+    , STATUS_PAGAMENTO VARCHAR2(20) 
+    , ID_CLIENTE INTEGER 
+    , ID_LOCALIDADE INTEGER 
+    , CONSTRAINT TB_PEDIDOS_PK PRIMARY KEY 
 (
-ID_TRANSACAO 
+    ID_TRANSACAO 
 )
 ENABLE 
 );
@@ -1584,35 +1584,35 @@ ENABLE
 ALTER TABLE TB_PEDIDOS
 ADD CONSTRAINT TB_PEDIDOS_FK1 FOREIGN KEY
 (
-ID_CLIENTE 
+    ID_CLIENTE 
 )
 REFERENCES TB_CADASTRO_CLIENTE
 (
-ID_CLIENTE 
+    ID_CLIENTE 
 )
 ENABLE;
 
 ALTER TABLE TB_PEDIDOS
 ADD CONSTRAINT TB_PEDIDOS_FK2 FOREIGN KEY
 (
-ID_LOCALIDADE 
+    ID_LOCALIDADE 
 )
 REFERENCES TB_LOCALIDADE
 (
-ID_LOCALIDADE 
+    ID_LOCALIDADE 
 )
 ENABLE;
 
 CREATE TABLE TB_ITENS_PEDIDO 
 (
-ID_TRANSACAO INTEGER NOT NULL 
-, ID_PRODUTO INTEGER NOT NULL 
-, QUANTIDADE INTEGER 
-, PRECO_UNITARIO DOUBLE PRECISION 
-, CONSTRAINT TB_ITENS_PEDIDO_PK PRIMARY KEY 
-(
-ID_TRANSACAO 
-, ID_PRODUTO 
+    ID_TRANSACAO INTEGER NOT NULL 
+    , ID_PRODUTO INTEGER NOT NULL 
+    , QUANTIDADE INTEGER 
+    , PRECO_UNITARIO DOUBLE PRECISION 
+    , CONSTRAINT TB_ITENS_PEDIDO_PK PRIMARY KEY 
+    (
+    ID_TRANSACAO 
+    , ID_PRODUTO 
 )
 ENABLE 
 );
@@ -1620,11 +1620,11 @@ ENABLE
 ALTER TABLE TB_ITENS_PEDIDO
 ADD CONSTRAINT TB_ITENS_PEDIDO_FK1 FOREIGN KEY
 (
-ID_PRODUTO 
+    ID_PRODUTO 
 )
 REFERENCES TB_PRODUTO
 (
-ID_PRODUTO 
+    ID_PRODUTO 
 )
 ENABLE;
 ```
@@ -1781,61 +1781,61 @@ Com o usuário `STAGEAREA`, rode o seguinte script:
 ```sql
 CREATE TABLE ST_CADASTRO_CLIENTE 
 (
-ID_CLIENTE INTEGER  NOT NULL 
-, NOME_CLIENTE VARCHAR2(255) 
-, EMAIL_CLIENTE VARCHAR2(255) 
+    ID_CLIENTE INTEGER  NOT NULL 
+    , NOME_CLIENTE VARCHAR2(255) 
+    , EMAIL_CLIENTE VARCHAR2(255) 
 );
 
 CREATE TABLE ST_ENDERECO 
 (
-ID_ENDERECO INTEGER NOT NULL 
-, LOGRADOURO VARCHAR2(255) 
-, NUMERO NUMBER 
-, CIDADE VARCHAR2(2255) 
-, ESTADO VARCHAR2(255) 
-, PAIS VARCHAR2(255) 
-, CEP VARCHAR2(255) 
-, ID_CLIENTE INTEGER
+    ID_ENDERECO INTEGER NOT NULL 
+    , LOGRADOURO VARCHAR2(255) 
+    , NUMERO NUMBER 
+    , CIDADE VARCHAR2(2255) 
+    , ESTADO VARCHAR2(255) 
+    , PAIS VARCHAR2(255) 
+    , CEP VARCHAR2(255) 
+    , ID_CLIENTE INTEGER
 );
 
 CREATE TABLE ST_PRODUTO 
 (
-ID_PRODUTO INTEGER NOT NULL 
-, SKU VARCHAR2(255) 
-, NOME_PRODUTO VARCHAR2(255) 
-, ID_CATEGORIA INTEGER
+    ID_PRODUTO INTEGER NOT NULL 
+    , SKU VARCHAR2(255) 
+    , NOME_PRODUTO VARCHAR2(255) 
+    , ID_CATEGORIA INTEGER
 );
 
 CREATE TABLE ST_CATEGORIA 
 (
-ID_CATEGORIA INTEGER NOT NULL 
-, NOME_CATEGORIA VARCHAR2(255) 
-, NOME_SUB_CATEGORIA VARCHAR2(255) 
+    ID_CATEGORIA INTEGER NOT NULL 
+    , NOME_CATEGORIA VARCHAR2(255) 
+    , NOME_SUB_CATEGORIA VARCHAR2(255) 
 );
 
 CREATE TABLE ST_LOCALIDADE 
 (
-ID_LOCALIDADE INTEGER NOT NULL 
-, NOME_LOCALIDADE VARCHAR2(255) 
-, CIDADE_LOCALIDADE VARCHAR2(255) 
+    ID_LOCALIDADE INTEGER NOT NULL 
+    , NOME_LOCALIDADE VARCHAR2(255) 
+    , CIDADE_LOCALIDADE VARCHAR2(255) 
 );
 
 CREATE TABLE ST_PEDIDOS 
 (
-ID_TRANSACAO INTEGER NOT NULL 
-, DATA_TRANSACAO TIMESTAMP 
-, DATA_ENTREGA TIMESTAMP 
-, STATUS_PAGAMENTO VARCHAR2(255) 
-, ID_CLIENTE INTEGER 
-, ID_LOCALIDADE INTEGER 
+    ID_TRANSACAO INTEGER NOT NULL 
+    , DATA_TRANSACAO TIMESTAMP 
+    , DATA_ENTREGA TIMESTAMP 
+    , STATUS_PAGAMENTO VARCHAR2(255) 
+    , ID_CLIENTE INTEGER 
+    , ID_LOCALIDADE INTEGER 
 );
 
 CREATE TABLE ST_ITENS_PEDIDO 
 (
-ID_TRANSACAO INTEGER NOT NULL 
-, ID_PRODUTO INTEGER NOT NULL 
-, QUANTIDADE INTEGER 
-, PRECO_UNITARIO DOUBLE PRECISION 
+    ID_TRANSACAO INTEGER NOT NULL 
+    , ID_PRODUTO INTEGER NOT NULL 
+    , QUANTIDADE INTEGER 
+    , PRECO_UNITARIO DOUBLE PRECISION 
 );
 ```
 
@@ -1994,7 +1994,7 @@ FROM user_tables;
 A parte mais importante e demorada da implementação é nessa etapa, estarei realizando transformações para se adequar ao modelo dimensional criado na etapa de modelagem dimensional
 
 <a name = "T-D-Cliente"></a>
-- Criando a dimensão cliente
+<b>Criando a dimensão cliente</b>
 
 Para criar a dimensão cliente, é necessário realizar alguns ajustes na tabela ST_CADASTRO_CLIENTE, nela que será baseada a criação da dimensão
 
@@ -2115,15 +2115,15 @@ FROM ST_DIM_CLIENTE;
 ![Untitled](Imagens/Untitled%20178.png)
 
 <a name = "T-D-Localidade"></a>
-- Criando a dimensão localidade
+<b>Criando a dimensão localidade</b>
 
 ```sql
 CREATE TABLE ST_DIM_LOCALIDADE
 (
-NK_ID_LOCALIDADE VARCHAR2(20) NOT NULL,
-NM_LOCALIDADE VARCHAR2(50) NOT NULL,
-NM_CIDADE_LOCALIDADE VARCHAR2(50) NOT NULL,
-NM_REGIAO_LOCALIDADE VARCHAR2(50) NOT NULL
+    NK_ID_LOCALIDADE VARCHAR2(20) NOT NULL,
+    NM_LOCALIDADE VARCHAR2(50) NOT NULL,
+    NM_CIDADE_LOCALIDADE VARCHAR2(50) NOT NULL,
+    NM_REGIAO_LOCALIDADE VARCHAR2(50) NOT NULL
 );
 
 INSERT INTO ST_DIM_LOCALIDADE
@@ -2152,11 +2152,11 @@ FROM ST_DIM_LOCALIDADE;
 ```sql
 CREATE TABLE ST_DIM_PRODUTO
 (
-NK_ID_PRODUTO VARCHAR2(20) NOT NULL,
-DESC_SKU VARCHAR2(50) NOT NULL,
-NM_PRODUTO VARCHAR2(50) NOT NULL,
-NM_CATEGORIA_PRODUTO VARCHAR2(30) NOT NULL,
-NM_MARCA_PRODUTO VARCHAR2(30) NOT NULL
+    NK_ID_PRODUTO VARCHAR2(20) NOT NULL,
+    DESC_SKU VARCHAR2(50) NOT NULL,
+    NM_PRODUTO VARCHAR2(50) NOT NULL,
+    NM_CATEGORIA_PRODUTO VARCHAR2(30) NOT NULL,
+    NM_MARCA_PRODUTO VARCHAR2(30) NOT NULL
 );
 
 INSERT INTO ST_DIM_PRODUTO
@@ -2183,18 +2183,19 @@ FROM ST_DIM_PRODUTO;
 ![Untitled](Imagens/Untitled%20180.png)
 
 <a name = "T-Fato"></a>
-- Criando o fato venda
+<b>Criando o fato venda</b>
 
 ```sql
-CREATE TABLE ST_VENDA(
-ID_TRANSACAO INTEGER,
-DATA_VENDA DATE,
-STATUS_PAGAMENTO VARCHAR2(20),
-ID_CLIENTE INTEGER,
-ID_LOCALIDADE INTEGER,
-ID_PRODUTO INTEGER,
-QUANTIDADE INTEGER,
-PRECO_UNITARIO DECIMAL
+CREATE TABLE ST_VENDA
+(
+    ID_TRANSACAO INTEGER,
+    DATA_VENDA DATE,
+    STATUS_PAGAMENTO VARCHAR2(20),
+    ID_CLIENTE INTEGER,
+    ID_LOCALIDADE INTEGER,
+    ID_PRODUTO INTEGER,
+    QUANTIDADE INTEGER,
+    PRECO_UNITARIO DECIMAL
 );
 
 INSERT INTO ST_VENDA
@@ -2258,7 +2259,7 @@ Entre no usuário criado `dw`
 ![Untitled](Imagens/Untitled%20183.png)
 
 <a name = "DW-Cliente"></a>
-- Dimensão cliente
+<b>Dimensão cliente</b>
 
 Criando a sequência para receber o campo da surrogate key na dimensão cliente
 
@@ -2271,17 +2272,17 @@ Criando a dimensão cliente com a surrogate key, mencionando a sequência
 ```sql
 CREATE TABLE TB_DIM_CLIENTE
 (
-SK_CLIENTE INTEGER DEFAULT dim_cliente_id_seq.NEXTVAL,
-NK_ID_CLIENTE VARCHAR2(20),
-NM_CLIENTE VARCHAR2(50),
-NM_CIDADE_CLIENTE VARCHAR2(50),
-FLAG_ACEITA_CAMPANHA CHAR(1),
-DESC_CEP VARCHAR2(10),
-CONSTRAINT TB_DIM_CLIENTE_PK PRIMARY KEY (SK_CLIENTE) ENABLE
+    SK_CLIENTE INTEGER DEFAULT dim_cliente_id_seq.NEXTVAL,
+    NK_ID_CLIENTE VARCHAR2(20),
+    NM_CLIENTE VARCHAR2(50),
+    NM_CIDADE_CLIENTE VARCHAR2(50),
+    FLAG_ACEITA_CAMPANHA CHAR(1),
+    DESC_CEP VARCHAR2(10),
+    CONSTRAINT TB_DIM_CLIENTE_PK PRIMARY KEY (SK_CLIENTE) ENABLE
 );
 ```
 <a name = "DW-Produto"></a>
-- Dimensão produto
+<b>Dimensão produto</b>
 
 Criando a sequência para receber o campo da surrogate key na dimensão produto
 
@@ -2305,7 +2306,7 @@ CONSTRAINT TB_DIM_PRODUTO_PK PRIMARY KEY (SK_PRODUTO) ENABLE
 ```
 
 <a name = "DW-Localidade"></a>
-- Dimensão localidade
+<b>Dimensão localidade</b>
 
 Criando a sequência para receber o campo da surrogate key na dimensão localidade
 
@@ -2318,35 +2319,35 @@ Criando a dimensão cliente com a surrogate key, mencionando a sequência
 ```sql
 CREATE TABLE TB_DIM_LOCALIDADE
 (
-SK_LOCALIDADE INTEGER DEFAULT DIM_LOCALIDADE_ID_SEQ.NEXTVAL,
-NK_ID_LOCALIDADE VARCHAR2(20) NOT NULL,
-NM_LOCALIDADE VARCHAR2(50) NOT NULL,
-NM_CIDADE_LOCALIDADE VARCHAR2(50) NOT NULL,
-NM_REGIAO_LOCALIDADE VARCHAR2(50) NOT NULL,
-CONSTRAINT TB_DIM_LOCALIDADE_PK PRIMARY KEY (SK_LOCALIDADE) ENABLE
+    SK_LOCALIDADE INTEGER DEFAULT DIM_LOCALIDADE_ID_SEQ.NEXTVAL,
+    NK_ID_LOCALIDADE VARCHAR2(20) NOT NULL,
+    NM_LOCALIDADE VARCHAR2(50) NOT NULL,
+    NM_CIDADE_LOCALIDADE VARCHAR2(50) NOT NULL,
+    NM_REGIAO_LOCALIDADE VARCHAR2(50) NOT NULL,
+    CONSTRAINT TB_DIM_LOCALIDADE_PK PRIMARY KEY (SK_LOCALIDADE) ENABLE
 );
 ```
 
 <a name = "DW-Tempo"></a>
-- Dimensão tempo
+<b>Dimensão tempo</b>
 
 Criando a dimensão cliente com a surrogate key, mencionando a sequência
 
 ```sql
 CREATE TABLE TB_DIM_TEMPO
 (
-SK_DATA INTEGER NOT NULL,
-DATA DATE NOT NULL,
-NR_ANO NUMBER(4) NOT NULL,
-NR_MES NUMBER NOT NULL,
-NM_MES VARCHAR2(20) NOT NULL,
-NR_DIA NUMBER NOT NULL,
-CONSTRAINT TB_DIM_DATA_PK PRIMARY KEY (SK_DATA) ENABLE
+    SK_DATA INTEGER NOT NULL,
+    DATA DATE NOT NULL,
+    NR_ANO NUMBER(4) NOT NULL,
+    NR_MES NUMBER NOT NULL,
+    NM_MES VARCHAR2(20) NOT NULL,
+    NR_DIA NUMBER NOT NULL,
+    CONSTRAINT TB_DIM_DATA_PK PRIMARY KEY (SK_DATA) ENABLE
 );
 ```
 
 <a name = "DW-Fato"></a>
-- Fato venda
+<b>Fato venda</b>
 
 Criando o fato venda
 
@@ -2368,95 +2369,95 @@ CONSTRAINT TB_FATO_VENDA_PK PRIMARY KEY (SK_CLIENTE, SK_PRODUTO, SK_LOCALIDADE, 
 ### Carga de dados
 
 <a name = "CargaTempo"></a>
-- Dimensão tempo
+<b>Dimensão tempo</b>
 
 Criando os dados de tempo para a dimensão tempo
 
 ```sql
 INSERT INTO TB_DIM_TEMPO 
 SELECT 
-TO_CHAR(
-TO_DATE('31/12/2012', 'DD/MM/YYYY') + NUMTODSINTERVAL(n, 'day'), 
-'YYYYMMDD'
-) AS SK_DATA, 
-TO_DATE('31/12/2012', 'DD/MM/YYYY') + NUMTODSINTERVAL(n, 'day') as FULL_DATE, 
-TO_CHAR(
-TO_DATE('31/12/2012', 'DD/MM/YYYY') + NUMTODSINTERVAL(n, 'day'), 
-'YYYY'
-) AS NR_ANO, 
-TO_CHAR(
-TO_DATE('31/12/2012', 'DD/MM/YYYY') + NUMTODSINTERVAL(n, 'day'), 
-'MM'
-) AS NR_MES, 
-TO_CHAR(
-TO_DATE('31/12/2012', 'DD/MM/YYYY') + NUMTODSINTERVAL(n, 'day'), 
-'Month'
-) AS NM_MES, 
-TO_CHAR(
-TO_DATE('31/12/2012', 'DD/MM/YYYY') + NUMTODSINTERVAL(n, 'day'), 
-'DD'
-) AS NR_DIA 
+    TO_CHAR(
+    TO_DATE('31/12/2012', 'DD/MM/YYYY') + NUMTODSINTERVAL(n, 'day'), 
+    'YYYYMMDD'
+    ) AS SK_DATA, 
+    TO_DATE('31/12/2012', 'DD/MM/YYYY') + NUMTODSINTERVAL(n, 'day') as FULL_DATE, 
+    TO_CHAR(
+    TO_DATE('31/12/2012', 'DD/MM/YYYY') + NUMTODSINTERVAL(n, 'day'), 
+    'YYYY'
+    ) AS NR_ANO, 
+    TO_CHAR(
+    TO_DATE('31/12/2012', 'DD/MM/YYYY') + NUMTODSINTERVAL(n, 'day'), 
+    'MM'
+    ) AS NR_MES, 
+    TO_CHAR(
+    TO_DATE('31/12/2012', 'DD/MM/YYYY') + NUMTODSINTERVAL(n, 'day'), 
+    'Month'
+    ) AS NM_MES, 
+    TO_CHAR(
+    TO_DATE('31/12/2012', 'DD/MM/YYYY') + NUMTODSINTERVAL(n, 'day'), 
+    'DD'
+    ) AS NR_DIA 
 FROM 
 (
-SELECT 
-LEVEL N 
-FROM 
-DUAL CONNECT BY LEVEL <= 2000
+    SELECT 
+    LEVEL N 
+    FROM 
+    DUAL CONNECT BY LEVEL <= 2000
 );
 COMMIT;
 ```
 <a name = "CargaCliente"></a>
-- Dimensão cliente
+<b>Dimensão cliente</b>
 
 ```sql
 INSERT INTO TB_DIM_CLIENTE 
 SELECT 
-DIM_CLIENTE_ID_SEQ.NEXTVAL, 
-NK_ID_CLIENTE, 
-NM_CLIENTE, 
-NM_CIDADE_CLIENTE, 
-FLAG_ACEITA_CAMPANHA, 
-DESC_CEP 
+    DIM_CLIENTE_ID_SEQ.NEXTVAL, 
+    NK_ID_CLIENTE, 
+    NM_CLIENTE, 
+    NM_CIDADE_CLIENTE, 
+    FLAG_ACEITA_CAMPANHA, 
+    DESC_CEP 
 FROM 
-stagearea.ST_DIM_CLIENTE;
+    stagearea.ST_DIM_CLIENTE;
 
 COMMIT;
 ```
 <a name = "CargaProduto"></a>
-- Dimensão produto
+<b>Dimensão produto</b>
 
 ```sql
 INSERT INTO TB_DIM_PRODUTO 
 SELECT 
-DIM_PRODUTO_ID_SEQ.NEXTVAL, 
-NK_ID_PRODUTO, 
-DESC_SKU, 
-NM_PRODUTO, 
-NM_CATEGORIA_PRODUTO, 
-NM_MARCA_PRODUTO 
+    DIM_PRODUTO_ID_SEQ.NEXTVAL, 
+    NK_ID_PRODUTO, 
+    DESC_SKU, 
+    NM_PRODUTO, 
+    NM_CATEGORIA_PRODUTO, 
+    NM_MARCA_PRODUTO 
 FROM 
-stagearea.ST_DIM_PRODUTO;
+    stagearea.ST_DIM_PRODUTO;
 
 COMMIT;
 ```
 <a name = "CargaLocalidade"></a>
-- Dimensão localidade
+<b>Dimensão localidade</b>
 
 ```sql
 INSERT INTO TB_DIM_LOCALIDADE 
 SELECT 
-DIM_LOCALIDADE_ID_SEQ.NEXTVAL, 
-NK_ID_LOCALIDADE, 
-NM_LOCALIDADE, 
-NM_CIDADE_LOCALIDADE, 
-NM_REGIAO_LOCALIDADE 
+    DIM_LOCALIDADE_ID_SEQ.NEXTVAL, 
+    NK_ID_LOCALIDADE, 
+    NM_LOCALIDADE, 
+    NM_CIDADE_LOCALIDADE, 
+    NM_REGIAO_LOCALIDADE 
 FROM 
-stagearea.ST_DIM_LOCALIDADE;
+    stagearea.ST_DIM_LOCALIDADE;
 
 COMMIT;
 ```
 <a name = "FatoVendaa"></a>
-- Fato venda
+<b>Fato venda</b>
 
 Adicionando na dimensão cliente, um registro para clientes não identificados nas vendas
 
@@ -2464,8 +2465,8 @@ Adicionando na dimensão cliente, um registro para clientes não identificados n
 INSERT INTO TB_DIM_CLIENTE 
 VALUES 
 (
--1, -1, '<não identificado>', '<não identificado>', 
-0, 'NA'
+    -1, -1, '<não identificado>', '<não identificado>', 
+    0, 'NA'
 );
 COMMIT;
 ```
@@ -2475,20 +2476,20 @@ Criando a fato venda
 ```sql
 INSERT INTO TB_FATO_VENDA 
 SELECT 
-COALESCE(B.SK_CLIENTE, -1) AS SK_CLIENTE, 
-COALESCE(C.SK_PRODUTO, -1) AS SK_PRODUTO, 
-COALESCE(D.SK_LOCALIDADE, -1) AS SK_LOCALIDADE, 
-TO_NUMBER(
-TO_CHAR(DATA_VENDA, 'yyyymmdd'), 
-'99999999'
-) AS SK_DATA, 
-(A.PRECO_UNITARIO * A.QUANTIDADE) AS VL_VENDA, 
-A.QUANTIDADE AS QNT_VENDA 
+    COALESCE(B.SK_CLIENTE, -1) AS SK_CLIENTE, 
+    COALESCE(C.SK_PRODUTO, -1) AS SK_PRODUTO, 
+    COALESCE(D.SK_LOCALIDADE, -1) AS SK_LOCALIDADE, 
+    TO_NUMBER(
+    TO_CHAR(DATA_VENDA, 'yyyymmdd'), 
+    '99999999'
+    ) AS SK_DATA, 
+    (A.PRECO_UNITARIO * A.QUANTIDADE) AS VL_VENDA, 
+    A.QUANTIDADE AS QNT_VENDA 
 FROM 
-STAGEAREA.ST_VENDA A 
-LEFT JOIN TB_DIM_CLIENTE B ON A.ID_CLIENTE = B.NK_ID_CLIENTE 
-LEFT JOIN TB_DIM_PRODUTO C ON A.ID_PRODUTO = C.NK_ID_PRODUTO 
-LEFT JOIN TB_DIM_LOCALIDADE D ON A.ID_LOCALIDADE = D.NK_ID_LOCALIDADE;
+    STAGEAREA.ST_VENDA A 
+    LEFT JOIN TB_DIM_CLIENTE B ON A.ID_CLIENTE = B.NK_ID_CLIENTE 
+    LEFT JOIN TB_DIM_PRODUTO C ON A.ID_PRODUTO = C.NK_ID_PRODUTO 
+    LEFT JOIN TB_DIM_LOCALIDADE D ON A.ID_LOCALIDADE = D.NK_ID_LOCALIDADE;
 COMMIT;
 ```
 
