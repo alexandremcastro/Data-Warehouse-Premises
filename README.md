@@ -106,7 +106,7 @@ Uma vez que o modelo de dados é definido, o próximo passo é a construção do
 
 Um aspecto crítico de qualquer projeto de data warehouse é o processo de ETL (Extração, Transformação e Carregamento), que envolve a extração dos dados de várias fontes, a transformação para garantir a integridade e qualidade dos dados, e o carregamento nos repositórios de dados do data warehouse.
 
-Por fim, o data warehouse é mantido por meio de atividades regulares de administração e manutenção, como monitoramento de desempenho, backup e recuperação de dados e gerenciamento de usuários e segurança.
+Por fim, o Data Warehouse é mantido por meio de atividades regulares de administração e manutenção, como monitoramento de desempenho, backup e recuperação de dados e gerenciamento de usuários e segurança.
 
 Em resumo, um projeto de Data Warehouse com Oracle Database é uma iniciativa complexa que requer a definição cuidadosa de requisitos de negócios, a criação de um modelo de dados escalável, a construção de um Data Warehouse robusto e o gerenciamento contínuo do ambiente de armazenamento de dados.
 
