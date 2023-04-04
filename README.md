@@ -6,7 +6,9 @@
 
 ## Sumário
 + [Introdução](#Introducao)
+    + [Requisitos](#Sobre)
     + [Sobre](#Sobre)
+        + [Descrição](#Descricao)
         + [Ferramentas utilizadas](#Ferramentas)
         + [Links](#Links)
 + [Infraestrutura](#Infraestrutura)
@@ -75,6 +77,7 @@
 ## Introdução
 [Voltar para o ínicio ↑](#Inicio)
 
+<a name = "Requisitos"></a>
 ### Requisitos
 
 <br>
@@ -82,17 +85,20 @@
 <a name = "Sobre"></a>
 ### Sobre
 
-Um projeto de data warehouse com Oracle Database é um esforço para criar um ambiente de armazenamento de dados centralizado e integrado que possa suportar as necessidades de análise de negócios de uma organização. O objetivo final é fornecer aos usuários de negócios um acesso fácil e rápido a informações precisas e relevantes para que possam tomar decisões mais informadas e eficazes.
+<a name = "Descricao"></a>
+<b>Descrição</b>
 
-O projeto começa com a identificação dos requisitos de negócios e dos dados que precisam ser armazenados e analisados. Em seguida, é criado um modelo de dados que define as tabelas, colunas e relacionamentos necessários para armazenar e integrar os dados. O modelo de dados é projetado para ser escalável e permitir a adição de novos dados e análises conforme as necessidades do negócio evoluem.
+Um projeto de Data Warehouse com Oracle Database é um esforço para criar um ambiente de armazenamento de dados centralizado e integrado que possa suportar as necessidades de análise de negócios de uma organização. O objetivo final é fornecer aos usuários de negócios um acesso fácil e rápido a informações precisas e relevantes para que possam tomar decisões mais informadas e eficazes.
 
-Uma vez que o modelo de dados é definido, o próximo passo é a construção do data warehouse em si. O Oracle Database é uma das opções de banco de dados mais populares para data warehousing, devido à sua capacidade de processamento de grandes volumes de dados e à sua capacidade de escalabilidade. A arquitetura do data warehouse pode ser baseada em um modelo de camadas, onde os dados são carregados em uma camada de aterramento (staging layer) antes de serem transformados e carregados em camadas subsequentes. A camada final é a camada de apresentação, onde os usuários de negócios acessam os dados por meio de ferramentas de visualização ou de relatórios.
+O projeto começa com a identificação dos requisitos de negócios e dos dados que precisam ser armazenados e analisados. Em seguida, são criados modelos de dados que definem as tabelas, colunas e relacionamentos necessários para armazenar e integrar os dados. Os modelos de dados são projetados para ser escalável e permitir a adição de novos dados e análises conforme as necessidades do negócio evoluem.
 
-Um aspecto crítico de qualquer projeto de data warehouse é o processo de ETL (Extração, Transformação e Carregamento), que envolve a extração dos dados de várias fontes, a transformação para garantir a integridade e qualidade dos dados, e o carregamento nos repositórios de dados do data warehouse. O Oracle Database oferece ferramentas de ETL, como o Oracle Data Integrator (ODI) e o Oracle Warehouse Builder (OWB), para ajudar na implementação deste processo.
+Uma vez que o modelo de dados é definido, o próximo passo é a construção do data warehouse em si. O Oracle Database é uma das opções de banco de dados mais populares para Data Warehousing, devido à sua capacidade de processamento de grandes volumes de dados e à sua capacidade de escalabilidade. A arquitetura do Data Warehouse pode ser baseada em um modelo de camadas, onde os dados são carregados em uma camada de aterramento (staging layer) antes de serem transformados e carregados em camadas subsequentes. A camada final é a camada de apresentação, onde os usuários de negócios acessam os dados por meio de ferramentas de visualização ou de relatórios.
+
+Um aspecto crítico de qualquer projeto de data warehouse é o processo de ETL (Extração, Transformação e Carregamento), que envolve a extração dos dados de várias fontes, a transformação para garantir a integridade e qualidade dos dados, e o carregamento nos repositórios de dados do data warehouse.
 
 Por fim, o data warehouse é mantido por meio de atividades regulares de administração e manutenção, como monitoramento de desempenho, backup e recuperação de dados e gerenciamento de usuários e segurança.
 
-Em resumo, um projeto de data warehouse com Oracle Database é uma iniciativa complexa que requer a definição cuidadosa de requisitos de negócios, a criação de um modelo de dados escalável, a construção de um data warehouse robusto e o gerenciamento contínuo do ambiente de armazenamento de dados.
+Em resumo, um projeto de Data Warehouse com Oracle Database é uma iniciativa complexa que requer a definição cuidadosa de requisitos de negócios, a criação de um modelo de dados escalável, a construção de um Data Warehouse robusto e o gerenciamento contínuo do ambiente de armazenamento de dados.
 
 <a name = "Ferramentas"></a>
 <b>Ferramentas utilizadas</b>
