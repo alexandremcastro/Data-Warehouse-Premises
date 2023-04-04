@@ -110,6 +110,8 @@ Por fim, o data warehouse é mantido por meio de atividades regulares de adminis
 
 Em resumo, um projeto de Data Warehouse com Oracle Database é uma iniciativa complexa que requer a definição cuidadosa de requisitos de negócios, a criação de um modelo de dados escalável, a construção de um Data Warehouse robusto e o gerenciamento contínuo do ambiente de armazenamento de dados.
 
+<br>
+
 <a name = "Ferramentas"></a>
 <b>Ferramentas utilizadas</b>
 
@@ -124,10 +126,10 @@ Em resumo, um projeto de Data Warehouse com Oracle Database é uma iniciativa co
 <b>Links</b>
 
 Link para o projeto no 
-[Notion](https://alexandremcastro.notion.site/02-2023-AWS-Data-Lake-Serverless-c8f8198221134364991976c26ee1a985)  <a name = "Notion"></a>
+[Notion](https://alexandremcastro.notion.site/01-2023-Data-Warehouse-On-Premises-25b04fc48a6043b186b66f6cedf9a19d)  <a name = "Notion"></a>
 
 Link para o projeto no  <a name = "Site"></a>
-[Site](https://alexandre-castro.vercel.app/blog/datalake-serverless)
+[Site]()
 
 <br>
 
