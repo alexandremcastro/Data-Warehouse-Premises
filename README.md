@@ -2006,7 +2006,7 @@ Clique em `Add the selected items on the left.`
 
 Repita esse processo para todas as tabelas
 
-Clique em `Next >`
+Clique em `Next ->`
 
 ![Untitled](Imagens/Untitled%20161.png)
 
