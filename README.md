@@ -54,15 +54,15 @@ Ao longo do desenvolvimento, trabalhei com diversas ferramentas e tecnologias, i
     + [Verificando a integridade de dados](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/Implementacao.md#Integridade)
 
 ## Requisitos
-- Hardware: O Oracle Database requer um hardware de servidor robusto com um mínimo de 2 GB de RAM para versões mais antigas e pelo menos 4 GB para versões mais recentes. É recomendável ter um processador multicore com, pelo menos, 4 núcleos e uma unidade de disco rígido com, no mínimo, 40 GB de espaço livre.
+- **Hardware:** O Oracle Database requer um hardware de servidor robusto com um mínimo de 2 GB de RAM para versões mais antigas e pelo menos 4 GB para versões mais recentes. É recomendável ter um processador multicore com, pelo menos, 4 núcleos e uma unidade de disco rígido com, no mínimo, 40 GB de espaço livre.
 
-- Sistema operacional: O Oracle Database é executado em várias plataformas de sistema operacional, incluindo Linux, Windows, Solaris e AIX. Verifique se o sistema operacional é compatível com a versão do Oracle Database que deseja instalar.
+- **Sistema operacional:** O Oracle Database é executado em várias plataformas de sistema operacional, incluindo Linux, Windows, Solaris e AIX. Verifique se o sistema operacional é compatível com a versão do Oracle Database que deseja instalar.
 
-- Software adicional: O Oracle Database requer a instalação de software adicional, como o Oracle Client, o Oracle Net Services, o Oracle Enterprise Manager e o Java Runtime Environment (JRE).
+- **Software adicional:** O Oracle Database requer a instalação de software adicional, como o Oracle Client, o Oracle Net Services, o Oracle Enterprise Manager e o Java Runtime Environment (JRE).
 
-- Espaço em disco: O espaço em disco requerido para instalar o Oracle Database varia de acordo com a versão e as opções selecionadas durante a instalação. No entanto, é recomendável ter pelo menos 10 GB de espaço livre no disco rígido.
+- **Espaço em disco:** O espaço em disco requerido para instalar o Oracle Database varia de acordo com a versão e as opções selecionadas durante a instalação. No entanto, é recomendável ter pelo menos 10 GB de espaço livre no disco rígido.
 
-- Rede: O Oracle Database requer uma rede adequada para comunicação com outras máquinas e para acesso remoto. Verifique se a rede suporta as configurações de rede necessárias para a instalação do Oracle Database.
+- **Rede:** O Oracle Database requer uma rede adequada para comunicação com outras máquinas e para acesso remoto. Verifique se a rede suporta as configurações de rede necessárias para a instalação do Oracle Database.
 
 ## Tarefas
 **Tarefas concluídas**
