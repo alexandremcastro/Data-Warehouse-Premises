@@ -86,7 +86,7 @@ Ao longo do desenvolvimento, trabalhei com diversas ferramentas e tecnologias, i
 
 * [Projeto no site](https://alexandre-castro.vercel.app/blog/datawarehouse-premises)
 
-* Projeto no Notion](https://alexandremcastro.notion.site/01-2023-Data-Warehouse-On-Premises-25b04fc48a6043b186b66f6cedf9a19d)
+* [Projeto no Notion](https://alexandremcastro.notion.site/01-2023-Data-Warehouse-On-Premises-25b04fc48a6043b186b66f6cedf9a19d)
 
 * [Projeto no GitLab](https://gitlab.com/alexandremcastro/Data-Warehouse-Premises)
 
