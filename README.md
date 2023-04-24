@@ -102,6 +102,8 @@ Ao longo do desenvolvimento, trabalhei com diversas ferramentas e tecnologias, i
 
 * [Conceitos Básicos Sobre OLAP - DevMedia](https://www.devmedia.com.br/conceitos-basicos-sobre-olap/12523)
 
+* [Data Warehousing Concepts - Oracle](https://docs.oracle.com/cd/B10501_01/server.920/a96520/concept.htm)
+
 ## Conclusão
 O objetivo principal deste projeto experimental foi demonstrar a eficácia e o potencial do Data Warehouse para empresas e organizações que lidam com grandes volumes de dados. Para alcançar esse objetivo, simulei dados reais de um cenário real, possibilitanto a análise e interpretação desses dados.
 
