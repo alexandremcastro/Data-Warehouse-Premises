@@ -29,33 +29,31 @@ Este projeto experimental é o resultado das minhas experiências com Data Wareh
 
 Ao longo do desenvolvimento, trabalhei com diversas ferramentas e tecnologias, incluindo plataformas de integração de dados, banco de dados, modelagem de dados e desenvolvimento de queries.
 
-Este projeto foi uma experiência enriquecedora e me permitiu adquirir conhecimentos valiosos sobre a arquitetura e implementação de soluções de Data Warehouse. Espero que esta iniciativa possa ser útil para outras pessoas e organizações que buscam explorar o potencial do armazenamento e análise de dados em larga escala.
-
 ## Sumário
-+ [Infraestrutura](#Infraestrutura)
-    + [Preparando o Oracle VirtualBox](#PreparandoVirtualBox)
-    + [Preparando o Oracle Linux](#PreparandoLinux)
-    + [Preparando o Oracle Database](#PreparandoDatabase)
-    + [Download do Oracle Data Modeler](#DownloadModeler)
-    + [Download do Oracle SQL Developer](#DownloadDeveloper)
-    + [Download do Pentaho Data Integration](#DownloadPDI)
-+ [Modelagem](#Modelagem)
-    + [Modelo negocial](#ModeloNegocial)
-    + [Modelo lógico](#ModeloLogico)
-    + [Modelo relacional](#ModeloRelacional)
-    + [Modelo dimensional](#ModeloDimensional)
-    + [Modelo físico](#ModeloFisico)
-+ [Sistema Legado/Staging Area](#LegadoStaging)
-    + [Simulando o sistema legado](#Legado)
-    + [Criando a Staging Area](#Staging)
-    + [Criando as conexões com o banco](#Conexoes)
-    + [Transformações](#Transformacoes)
-+ [Implementação](#Implementacao)
-    + [Criando o Data Warehouse](#DataWarehouse)
-    + [Carga de dados](#CargaDados)
-    + [Verificando a integridade de dados](#Integridade)
++ [Infraestrutura](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/Infraestrutura.md#Infraestrutura)
+    + [Preparando o Oracle VirtualBox](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/Infraestrutura.md#PreparandoVirtualBox)
+    + [Preparando o Oracle Linux](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/Infraestrutura.md#PreparandoLinux)
+    + [Preparando o Oracle Database](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/Infraestrutura.md#PreparandoDatabase)
+    + [Download do Oracle Data Modeler](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/Infraestrutura.md#DownloadModeler)
+    + [Download do Oracle SQL Developer](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/Infraestrutura.md#DownloadDeveloper)
+    + [Download do Pentaho Data Integration](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/Infraestrutura.md#DownloadPDI)
++ [Modelagem](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/Modelagem.md#Modelagem)
+    + [Modelo negocial](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/Modelagem.md#ModeloNegocial)
+    + [Modelo lógico](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/Modelagem.md#ModeloLogico)
+    + [Modelo relacional](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/Modelagem.md#ModeloRelacional)
+    + [Modelo dimensional](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/Modelagem.md#ModeloDimensional)
+    + [Modelo físico](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/Modelagem.md#ModeloFisico)
++ [Sistema Legado/Staging Area](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/LegadoStage.md#LegadoStaging)
+    + [Simulando o sistema legado](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/LegadoStage.md#Legado)
+    + [Criando a Staging Area](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/LegadoStage.md#Staging)
+    + [Criando as conexões com o banco](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/LegadoStage.md#Conexoes)
+    + [Transformações](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/LegadoStage.md#Transformacoes)
++ [Implementação](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/Implementacao.md#Implementacao)
+    + [Criando o Data Warehouse](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/Implementacao.md#DataWarehouse)
+    + [Carga de dados](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/Implementacao.md#CargaDados)
+    + [Verificando a integridade de dados](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/Implementacao.md#Integridade)
 
-## Requisitos para o projeto
+## Requisitos
 - Hardware: O Oracle Database requer um hardware de servidor robusto com um mínimo de 2 GB de RAM para versões mais antigas e pelo menos 4 GB para versões mais recentes. É recomendável ter um processador multicore com, pelo menos, 4 núcleos e uma unidade de disco rígido com, no mínimo, 40 GB de espaço livre.
 
 - Sistema operacional: O Oracle Database é executado em várias plataformas de sistema operacional, incluindo Linux, Windows, Solaris e AIX. Verifique se o sistema operacional é compatível com a versão do Oracle Database que deseja instalar.
@@ -66,26 +64,45 @@ Este projeto foi uma experiência enriquecedora e me permitiu adquirir conhecime
 
 - Rede: O Oracle Database requer uma rede adequada para comunicação com outras máquinas e para acesso remoto. Verifique se a rede suporta as configurações de rede necessárias para a instalação do Oracle Database.
 
+## Tarefas
+**Tarefas concluídas**
+
+- [x] Descrever sobre a finalidade do Data Warehouse
+- [x] Instalar as ferramentas necessárias para o projeto
+- [x] Simular um ambiente On-Premises
+- [x] Criar os modelos (negocial, lógico, relacional, dimensional e físico)
+- [x] Implementar e integrar os dados no Data Warehouse
+- [x] Verificar integridade dos dados
+
+**Futuras implementações**
+
+- [ ] Simular mais necessidades do cliente
+- [ ] Modificar as tabelas de acordo com as novas necessidades
+- [ ] Simular mais cargas de dados diárias para popular mais ainda o Data Warehouse
+- [ ] Criar um dashboard com os insights que serão possíveis com adição de novos dados
+
 ## Links
 **Projeto:**
 
-[Projeto no site](https://alexandre-castro.vercel.app/blog/datawarehouse-premises)
+* [Projeto no site](https://alexandre-castro.vercel.app/blog/datawarehouse-premises)
 
-[Projeto no Notion](https://alexandremcastro.notion.site/01-2023-Data-Warehouse-On-Premises-25b04fc48a6043b186b66f6cedf9a19d)
+* Projeto no Notion](https://alexandremcastro.notion.site/01-2023-Data-Warehouse-On-Premises-25b04fc48a6043b186b66f6cedf9a19d)
 
-[Projeto no GitLab](https://gitlab.com/alexandremcastro/Data-Warehouse-Premises)
+* [Projeto no GitLab](https://gitlab.com/alexandremcastro/Data-Warehouse-Premises)
 
-[Projeto no GitHub](https://github.com/alexandremcastro/Data-Warehouse-Premises)
+* [Projeto no GitHub](https://github.com/alexandremcastro/Data-Warehouse-Premises)
 
 **Artigos orientadores:**
 
-[O que é um Data Warehouse - SAP](https://www.sap.com/brazil/insights/what-is-a-data-warehouse.html)
+* [O que é um Data Warehouse - SAP](https://www.sap.com/brazil/insights/what-is-a-data-warehouse.html)
 
-[Conceitos de Data Warehouse - AWS](https://aws.amazon.com/pt/data-warehouse/)
+* [Conceitos de Data Warehouse - AWS](https://aws.amazon.com/pt/data-warehouse/)
 
-[Data Warehousing in Microsoft Azure - Microsoft](https://learn.microsoft.com/en-us/azure/architecture/data-guide/relational-data/data-warehousing)
+* [Data Warehousing in Microsoft Azure - Microsoft](https://learn.microsoft.com/en-us/azure/architecture/data-guide/relational-data/data-warehousing)
 
-[Conceitos Básicos Sobre OLAP - DevMedia](https://www.devmedia.com.br/conceitos-basicos-sobre-olap/12523)
+* [Conceitos Básicos Sobre OLAP - DevMedia](https://www.devmedia.com.br/conceitos-basicos-sobre-olap/12523)
 
 ## Conclusão
 O objetivo principal deste projeto experimental foi demonstrar a eficácia e o potencial do Data Warehouse para empresas e organizações que lidam com grandes volumes de dados. Para alcançar esse objetivo, simulei dados reais de um cenário real, possibilitanto a análise e interpretação desses dados.
+
+Este projeto foi uma experiência enriquecedora e me permitiu adquirir conhecimentos valiosos sobre a arquitetura e implementação de soluções de Data Warehouse. Espero que esta iniciativa possa ser útil para outras pessoas e organizações que buscam explorar o potencial do armazenamento e análise de dados.
