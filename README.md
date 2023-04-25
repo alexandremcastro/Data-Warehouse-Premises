@@ -53,7 +53,7 @@ Ao longo do desenvolvimento, trabalhei com diversas ferramentas e tecnologias, i
     + [Carga de dados](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/Implementacao.md#CargaDados)
     + [Verificando a integridade de dados](https://github.com/alexandremcastro/Data-Warehouse-Premises/blob/main/Documentos/Implementacao.md#Integridade)
 
-## Requisitos
+## Pré-requisitos
 - **Hardware:** O Oracle Database requer um hardware de servidor robusto com um mínimo de 2 GB de RAM para versões mais antigas e pelo menos 4 GB para versões mais recentes. É recomendável ter um processador multicore com, pelo menos, 4 núcleos e uma unidade de disco rígido com, no mínimo, 40 GB de espaço livre.
 
 - **Sistema operacional:** O Oracle Database é executado em várias plataformas de sistema operacional, incluindo Linux, Windows, Solaris e AIX. Verifique se o sistema operacional é compatível com a versão do Oracle Database que deseja instalar.
